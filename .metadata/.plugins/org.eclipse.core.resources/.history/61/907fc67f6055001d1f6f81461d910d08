@@ -1,0 +1,30 @@
+package br.com.barbearia.view;
+
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class ImgensIconsView extends JPanel{
+	
+	ImageIcon iconAdmin = new ImageIcon(getClass().getResource("iconAdmin.png"));
+	
+	public void paintComponentdad(Graphics g) {
+		
+		super.paintComponent(g);
+		iconAdmin.setImage(iconAdmin.getImage().getScaledInstance(WIDTH, HEIGHT, 1));
+		Image imgAdmin = iconAdmin.getImage();
+		g.drawImage(imgAdmin, 0,0,null);
+	}
+	
+	
+
+}
+
+//ImagensView fundo;
+//fundo = new ImagensView();
+//setContentPane(fundo);
+//fundo.setLayout(new GridLayout(8, 3));
+//fundo.add(Box.createRigidArea(new Dimension()));
