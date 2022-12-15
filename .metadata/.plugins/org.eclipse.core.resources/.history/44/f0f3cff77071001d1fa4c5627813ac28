@@ -1,0 +1,75 @@
+package br.com.barbearia.view;
+
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.Color;
+
+@SuppressWarnings("serial")
+public class TelaCaixaView extends JPanel {
+	private JTable tableSaida;
+	private JTable table_1;
+
+	/**
+	 * Create the panel.
+	 */
+	public TelaCaixaView() {
+		setBackground(Color.LIGHT_GRAY);
+		setLayout(null);
+		
+		tableSaida = new JTable();
+		tableSaida.setBounds(10, 23, 418, 602);
+		add(tableSaida);
+		
+		table_1 = new JTable();
+		table_1.setBounds(559, 23, 457, 602);
+		add(table_1);
+		
+		JLabel lblEntrada = new JLabel("Entrada");
+		lblEntrada.setFont(new Font("Segoe Print", Font.BOLD, 19));
+		lblEntrada.setBounds(115, 636, 134, 14);
+		add(lblEntrada);
+		
+		JLabel lblSaida = new JLabel("Saída");
+		lblSaida.setFont(new Font("Segoe Print", Font.BOLD, 19));
+		lblSaida.setBounds(816, 636, 103, 14);
+		add(lblSaida);
+		
+		JLabel lblFiltro = new JLabel("Filtrar por");
+		lblFiltro.setFont(new Font("Segoe Print", Font.BOLD, 15));
+		lblFiltro.setBounds(445, 97, 104, 14);
+		add(lblFiltro);
+		
+		JButton btnNewButton = new JButton("Dia");
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setBackground(Color.DARK_GRAY);
+		btnNewButton.setFont(new Font("Segoe Print", Font.BOLD, 11));
+		btnNewButton.setBounds(445, 151, 104, 23);
+		add(btnNewButton);
+		
+		JButton btnMes = new JButton("Mês");
+		btnMes.setForeground(Color.WHITE);
+		btnMes.setBackground(Color.DARK_GRAY);
+		btnMes.setFont(new Font("Segoe Print", Font.BOLD, 11));
+		btnMes.setBounds(445, 204, 104, 23);
+		add(btnMes);
+		
+		JButton btnFuncionario = new JButton("Funcionário");
+		btnFuncionario.setBackground(Color.DARK_GRAY);
+		btnFuncionario.setForeground(Color.WHITE);
+		btnFuncionario.setFont(new Font("Segoe Print", Font.BOLD, 11));
+		btnFuncionario.setBounds(445, 256, 104, 23);
+		add(btnFuncionario);
+		
+		JButton btnCliente = new JButton("Cliente");
+		btnCliente.setBackground(Color.DARK_GRAY);
+		btnCliente.setForeground(Color.WHITE);
+		btnCliente.setFont(new Font("Segoe Print", Font.BOLD, 11));
+		btnCliente.setBounds(445, 305, 104, 23);
+		add(btnCliente);
+
+	}
+
+}
