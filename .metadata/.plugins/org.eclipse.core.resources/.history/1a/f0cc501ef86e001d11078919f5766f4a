@@ -1,0 +1,69 @@
+package br.com.barbearia.view;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Color;
+
+public class TelaProdutoView extends JPanel {
+	private JTextField textNome;
+	private JTextField textValorPago;
+	private JTextField textValorVenda;
+	private JTextField textQuantidade;
+	private JTextField textDataCompra;
+
+	/**
+	 * Create the panel.
+	 */
+	public TelaProdutoView() {
+		setBackground(Color.LIGHT_GRAY);
+		setLayout(null);
+		
+		JLabel lblNome = new JLabel("Nome");
+		lblNome.setBounds(10, 11, 155, 20);
+		add(lblNome);
+		
+		textNome = new JTextField();
+		textNome.setBounds(10, 42, 168, 20);
+		add(textNome);
+		textNome.setColumns(10);
+		
+		JLabel lblValorPago = new JLabel("Valor Pago");
+		lblValorPago.setBounds(10, 73, 168, 14);
+		add(lblValorPago);
+		
+		textValorPago = new JTextField();
+		textValorPago.setBounds(10, 98, 170, 20);
+		add(textValorPago);
+		textValorPago.setColumns(10);
+		
+		JLabel lblValorVenda = new JLabel("Valor de Venda");
+		lblValorVenda.setBounds(10, 129, 168, 14);
+		add(lblValorVenda);
+		
+		textValorVenda = new JTextField();
+		textValorVenda.setBounds(10, 154, 172, 20);
+		add(textValorVenda);
+		textValorVenda.setColumns(10);
+		
+		JLabel lblQuantidade = new JLabel("Quantidade");
+		lblQuantidade.setBounds(10, 185, 119, 14);
+		add(lblQuantidade);
+		
+		textQuantidade = new JTextField();
+		textQuantidade.setBounds(10, 210, 86, 20);
+		add(textQuantidade);
+		textQuantidade.setColumns(10);
+		
+		JLabel lblDataCompra = new JLabel("Data de Compra");
+		lblDataCompra.setBounds(10, 241, 86, 14);
+		add(lblDataCompra);
+		
+		textDataCompra = new JTextField();
+		textDataCompra.setBounds(10, 269, 86, 20);
+		add(textDataCompra);
+		textDataCompra.setColumns(10);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package br.com.barbearia.view;
+
+import javax.swing.JPanel;
+
+public class TelaCaixaView extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public TelaCaixaView() {
+
+	}
+
+}

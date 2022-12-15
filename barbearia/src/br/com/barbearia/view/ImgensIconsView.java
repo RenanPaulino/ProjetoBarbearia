@@ -1,8 +1,5 @@
 package br.com.barbearia.view;
 
-import java.awt.Graphics;
-import java.awt.Image;
-
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -19,15 +16,19 @@ public class ImgensIconsView extends JPanel{
 	ImageIcon iconServico = new ImageIcon(getClass().getResource("iconServico.png"));
 	
 	//Icone Administrador
-	public void iconAdmin(Graphics g) {
-		
-		super.paintComponent(g);
-		iconAdmin.setImage(iconAdmin.getImage().getScaledInstance(WIDTH, HEIGHT, 1));
-		Image imgAdmin = iconAdmin.getImage();
-		g.drawImage(imgAdmin, 0,0,null);
-	}
+	 public ImageIcon iconeAdmin(int larg, int alt) {
+	//	ImageIcon iconAdmin = new ImageIcon(getClass().getResource("iconAdmin.png"));
 	
-	//Icone Agenda
+		iconAdmin.setImage(iconAdmin.getImage().getScaledInstance(larg -200, alt, 1));
+		return iconAdmin;
+	} 
+		
+	
+		
+	
+}
+	
+/*	//Icone Agenda
 	public void iconAgenda(Graphics g) {
 		
 		super.paintComponent(g);
@@ -46,7 +47,7 @@ public class ImgensIconsView extends JPanel{
 	}
 	
 
-}
+} */
 
 //ImagensView fundo;
 //fundo = new ImagensView();
